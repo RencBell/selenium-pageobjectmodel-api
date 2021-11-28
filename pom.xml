@@ -12,6 +12,16 @@
         <maven.compiler.source>15</maven.compiler.source>
         <maven.compiler.target>15</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <mave-surefire-version>3.0.0-M5</mave-surefire-version>
+        <selenium-version>4.1.0</selenium-version>
+        <testng-version>7.4.0</testng-version>
+        <jackson-databind-version>2.13.0</jackson-databind-version>
+        <webdriverManager-version>5.0.3</webdriverManager-version>
+        <restAssured-version>4.4.0</restAssured-version>
+        <jsoup-version>1.14.3</jsoup-version>
+        <javaFaker-version>1.0.2</javaFaker-version>
+        <ashot-version>1.5.4</ashot-version>
     </properties>
 
     <build>
@@ -19,10 +29,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M5</version>
+                <version>${mave-surefire-version}</version>
                 <configuration>
-           <!--         <parallel>methods</parallel>
-                    <threadCount>6</threadCount>-->
+                    <!--         <parallel>methods</parallel>
+                             <threadCount>6</threadCount>-->
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
@@ -36,51 +46,51 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.1.0</version>
+            <version>${selenium-version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.4.0</version>
+            <version>${testng-version}</version>
             <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.12.3</version>
+            <version>${jackson-databind-version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>4.4.3</version>
+            <version>${webdriverManager-version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
-            <version>4.4.0</version>
+            <version>${restAssured-version}</version>
             <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
         <dependency>
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
-            <version>1.13.1</version>
+            <version>${jsoup-version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
         <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
-            <version>1.0.2</version>
+            <version>${javaFaker-version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/ru.yandex.qatools.ashot/ashot -->
         <dependency>
             <groupId>ru.yandex.qatools.ashot</groupId>
             <artifactId>ashot</artifactId>
-            <version>1.5.4</version>
+            <version>${ashot-version}</version>
         </dependency>
     </dependencies>
 </project>

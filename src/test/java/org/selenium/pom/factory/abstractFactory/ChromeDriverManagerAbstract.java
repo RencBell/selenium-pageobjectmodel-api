@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.selenium.pom.factory.DriverManager;
 
+import java.util.concurrent.TimeUnit;
+
 public class ChromeDriverManagerAbstract extends DriverManagerAbstract {
 
     @Override
